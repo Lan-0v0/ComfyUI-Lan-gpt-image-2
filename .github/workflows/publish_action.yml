@@ -17,4 +17,4 @@ jobs:
       - name: Publish Custom Node
         uses: Comfy-Org/publish-node-action@v1
         with:
-          personal_access_token: ${{ secrets.LanAPI }}
+          personal_access_token: ${{ secrets.LANAPI }}
