@@ -1,19 +1,19 @@
 [project]
-name = "lan-gpt-image-2"  # 唯一标识符，创建后不可更改[reference:2]
-version = "1.0.0"         # 遵循语义化版本[reference:3]
+name = "lan-gpt-image-2"
+version = "1.0.0"
 description = "一个 ComfyUI 自定义节点，用于通过任意 OpenAI 兼容的图像 API 端点进行图像生成与编辑"
-license = { file = "LICENSE" }  # 指向仓库中的许可证文件[reference:4]
-requires-python = ">=3.8"       # 支持的 Python 版本[reference:5]
-
-# 从 requirements.txt 动态读取依赖[reference:6]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
 dynamic = ["dependencies"]
+
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
 
 [project.urls]
-Repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"  # 仓库地址[reference:7]
-Documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"  # 文档地址[reference:8]
+repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
+documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
 
 [tool.comfy]
-PublisherId = "Lan-0v0"      # 你的发布者ID，即 GitHub 用户名[reference:9]
-DisplayName = "lan"  # 在 ComfyUI Manager 中显示的名称[reference:10]
+PublisherId = "Lan-0v0"
+DisplayName = "Lan-gpt-image-2"
+Icon = "https://raw.githubusercontent.com/Lan-0v0/ComfyUI-Lan-gpt-image-2/main/icon.png"
