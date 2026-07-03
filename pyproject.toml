@@ -1,6 +1,6 @@
 [project]
 name = "lan-gpt-image-2"
-version = "1.0.1"
+version = "1.0.2"
 description = "一个 ComfyUI 自定义节点，用于通过任意 OpenAI 兼容的图像 API 端点进行图像生成与编辑"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
