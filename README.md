@@ -92,45 +92,6 @@ set OPENAI\_BASE\_URL=http://localhost:8317/v1
 auto\_fallback\_moderation 为 True（默认），则自动切换到 low 模式重新发送请求。
 如果将 auto\_fallback\_moderation 设为 False，则不回退，直接报错。
 
-
-
-## 参数说明
-
-参数名                      类型      必填  默认值                        说明
-─────────────────────────────────────────────────────────────────────────────────────────────────
-prompt                     STRING    是    ""                            图像生成/编辑的文本提示词
-api\_key                    STRING    是    ""                            API 密钥（密码字段），留空则读取 OPENAI\_API\_KEY 环境变量
-base\_url                   STRING    是    https://api.openai.com/v1     API 基础地址
-model                      STRING    否    gpt-image-1                   模型名称
-quality                    COMBO     否    auto                          auto / low / medium / high
-size                       COMBO     否    auto                          auto / 1024x1024 / 1024x1536 / 1536x1024 / 1024x1792 / 1792x1024
-n                          INT       否    1                             生成数量（1-10）
-background                 COMBO     否    opaque                        opaque / transparent
-moderation                 COMBO     否    auto                          auto / low / none
-auto\_fallback\_moderation   BOOLEAN   否    True                          API 拒绝当前审核级别时自动回退到 low
-output\_format              COMBO     否    png                           png / jpeg / webp
-output\_compression         INT       否    85                            压缩率 0-100，仅对 jpeg/webp 生效
-seed                       INT       否    0                             随机种子
-negative\_prompt            STRING    否    ""                            负面提示词（需 API 支持）
-image                      IMAGE     否    无                            编辑用的参考图像
-mask                       MASK      否    无                            局部重绘遮罩（白色=保留，黑色=编辑）
-timeout                    INT       否    120                           HTTP 请求超时秒数
-max\_retries                INT       否    3                             瞬时失败的最大重试次数
-retry\_delay                FLOAT     否    2.0                           重试基础延迟秒数（指数退避）
-extra\_headers              STRING    否    ""                            额外 HTTP 头，JSON 格式
-save\_to\_disk               BOOLEAN   否    False                         是否保存图像到 output\_dir
-output\_dir                 STRING    否    lan\_gpt\_image\_output          保存目录名
-
-
-
-## 输出端口
-
-端口名   类型    说明
-images   IMAGE   生成/编辑后的图像批次张量
-info     STRING  调试信息（端点、模型、耗时、张量维度等）
-
-
-
 ## 依赖
 
 requests >= 2.28.0
