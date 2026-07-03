@@ -1,19 +1,16 @@
 [project]
 name = "lan-gpt-image-2"
-version = "1.0.0"
+version = "1.0.1"
 description = "一个 ComfyUI 自定义节点，用于通过任意 OpenAI 兼容的图像 API 端点进行图像生成与编辑"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
-dynamic = ["dependencies"]
-
-[tool.setuptools.dynamic]
-dependencies = { file = ["requirements.txt"] }
+dependencies = [] 
 
 [project.urls]
-repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
-documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
+Repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
+Documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
 
 [tool.comfy]
 PublisherId = "Lan-0v0"
 DisplayName = "Lan-gpt-image-2"
-Icon = "https://raw.githubusercontent.com/Lan-0v0/ComfyUI-Lan-gpt-image-2/main/icon.png"
+Icon = "icon.png"
