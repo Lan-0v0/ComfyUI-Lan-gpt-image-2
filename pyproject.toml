@@ -11,6 +11,6 @@ Repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
 Documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"
 
 [tool.comfy]
-PublisherId = "Lan-0v0"
+PublisherId = "lan"
 DisplayName = "Lan-gpt-image-2"
 Icon = "icon.png"
