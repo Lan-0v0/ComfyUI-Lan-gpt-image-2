@@ -15,5 +15,5 @@ Repository = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"  # 仓库地�
 Documentation = "https://github.com/Lan-0v0/ComfyUI-Lan-gpt-image-2"  # 文档地址[reference:8]
 
 [tool.comfy]
-PublisherId = "Lan-0v0"      # 你的发布者ID，即 GitHub 用户名[reference:9]
+PublisherId = "lan"      # 你的发布者ID，即 GitHub 用户名[reference:9]
 DisplayName = "Lan-gpt-image-2"  # 在 ComfyUI Manager 中显示的名称[reference:10]
