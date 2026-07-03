@@ -78,7 +78,7 @@ pip install -r requirements.txt
 【配合 cli-proxy-api 使用】
 base\_url：http://localhost:8317/v1
 api\_key：你的代理 API 密钥
-model：gpt-image-1（或你的代理暴露的模型名）
+model：gpt-image-2（或你的代理暴露的模型名）
 
 【使用环境变量】
 可以设置环境变量来避免每次手动输入：
