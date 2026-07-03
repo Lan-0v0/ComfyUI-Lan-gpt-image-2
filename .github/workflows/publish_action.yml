@@ -1,12 +1,11 @@
 name: Publish to Comfy registry
 on:
-  workflow_dispatch:  # 允许手动触发，方便测试
+  workflow_dispatch:
   push:
     branches:
-      - main          # 如果你的默认分支是 master，请将 main 改为 master
-      # - master      # 如果你同时需要支持 main 和 master，可以取消注释这一行
+      - main
     paths:
-      - "pyproject.toml"  # 仅当 pyproject.toml 有变动时才触发
+      - "pyproject.toml"
 
 jobs:
   publish-node:
@@ -14,9 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 获取完整历史，确保版本标签能正确读取
+        uses: actions/checkout@v5  # 升级到 v5
       - name: Publish Custom Node
         uses: Comfy-Org/publish-node-action@main
         with:
